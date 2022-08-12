@@ -1,0 +1,140 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 4 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: DeepLearning_tuning_and_optimization-key_ideas_v2.ipynb
+--------------------------------------------------------------------------------
+DeepLearning_tuning_and_optimization-key_ideas_v2.ipynb:137:16: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+DeepLearning_tuning_and_optimization-key_ideas_v2.ipynb:204:16: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+DeepLearning_tuning_and_optimization-key_ideas_v2.ipynb:259:16: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+DeepLearning_tuning_and_optimization-key_ideas_v2.ipynb:307:16: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'DeepLearning_tuning_and_optimization-key_ideas_v2.ipynb'
+ outputting to 'custom_DeepLearning_tuning_and_optimization-key_ideas_v2.ipynb'
+--------------------------------------------------------------------------------
+
+24:4: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+25:4: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+72:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+73:10: INFO: Changing tf.contrib.layers.variance_scaling_initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+74:10: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+91:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+95:10: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+102:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+103:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+104:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+104:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+105:14: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+106:14: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+107:13: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+108:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+108:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+110:11: INFO: Added keywords to args of function 'tf.reduce_mean'
+113:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+113:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+114:16: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+116:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+116:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+117:14: INFO: Added keywords to args of function 'tf.nn.in_top_k'
+118:15: INFO: Added keywords to args of function 'tf.reduce_mean'
+119:7: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+120:8: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+126:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+137:16: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+152:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+153:10: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+160:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+161:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+163:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+163:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+164:14: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+165:13: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+166:5: INFO: Renamed 'tf.get_default_graph' to 'tf.compat.v1.get_default_graph'
+167:5: INFO: Renamed 'tf.get_default_graph' to 'tf.compat.v1.get_default_graph'
+171:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+171:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+174:16: INFO: Added keywords to args of function 'tf.reduce_mean'
+175:17: INFO: Added keywords to args of function 'tf.reduce_sum'
+175:45: INFO: Added keywords to args of function 'tf.reduce_sum'
+177:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+177:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+178:14: INFO: Added keywords to args of function 'tf.nn.in_top_k'
+179:15: INFO: Added keywords to args of function 'tf.reduce_mean'
+183:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+183:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+184:16: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+187:7: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+188:8: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+194:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+204:16: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+212:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+213:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+218:4: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+221:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+221:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+226:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+226:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+229:16: INFO: Added keywords to args of function 'tf.reduce_mean'
+230:17: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+230:35: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+232:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+232:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+233:14: INFO: Added keywords to args of function 'tf.nn.in_top_k'
+234:15: INFO: Added keywords to args of function 'tf.reduce_mean'
+238:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+238:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+239:16: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+242:7: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+243:8: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+249:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+259:16: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+262:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+263:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+264:11: INFO: Renamed 'tf.placeholder_with_default' to 'tf.compat.v1.placeholder_with_default'
+267:9: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+269:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+269:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+270:14: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+272:19: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+273:14: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+275:19: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+276:13: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+277:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+277:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+279:11: INFO: Added keywords to args of function 'tf.reduce_mean'
+281:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+281:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+282:16: INFO: Renamed 'tf.train.MomentumOptimizer' to 'tf.compat.v1.train.MomentumOptimizer'
+285:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+285:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+286:14: INFO: Added keywords to args of function 'tf.nn.in_top_k'
+287:15: INFO: Added keywords to args of function 'tf.reduce_mean'
+289:7: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+290:8: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+296:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+307:16: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+

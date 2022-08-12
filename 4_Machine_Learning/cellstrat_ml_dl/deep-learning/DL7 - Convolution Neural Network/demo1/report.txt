@@ -1,0 +1,37 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'module7_house_boat_cnn_v2.ipynb'
+ outputting to 'custom_module7_house_boat_cnn_v2.ipynb'
+--------------------------------------------------------------------------------
+
+22:0: INFO: Renamed 'tf.logging.set_verbosity' to 'tf.compat.v1.logging.set_verbosity'
+22:25: INFO: Renamed 'tf.logging.INFO' to 'tf.compat.v1.logging.INFO'
+81:12: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+82:12: INFO: Renamed 'tf.layers.max_pooling2d' to 'tf.compat.v1.layers.max_pooling2d'
+85:12: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+86:12: INFO: Renamed 'tf.layers.max_pooling2d' to 'tf.compat.v1.layers.max_pooling2d'
+89:12: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+90:12: INFO: Renamed 'tf.layers.max_pooling2d' to 'tf.compat.v1.layers.max_pooling2d'
+98:12: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+99:14: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+103:13: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+116:11: INFO: tf.losses.softmax_cross_entropy requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+116:11: INFO: Renamed 'tf.losses.softmax_cross_entropy' to 'tf.compat.v1.losses.softmax_cross_entropy'
+121:20: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+122:60: INFO: Renamed 'tf.train.get_global_step' to 'tf.compat.v1.train.get_global_step'
+126:35: INFO: tf.metrics.accuracy requires manual check. tf.metrics have been replaced with object oriented versions in TF 2.0 and after. The metric function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+126:35: INFO: Renamed 'tf.metrics.accuracy' to 'tf.compat.v1.metrics.accuracy'
+136:15: INFO: Renamed 'tf.train.LoggingTensorHook' to 'tf.estimator.LoggingTensorHook'
+137:17: INFO: Renamed 'tf.estimator.inputs.numpy_input_fn' to 'tf.compat.v1.estimator.inputs.numpy_input_fn'
+140:16: INFO: Renamed 'tf.estimator.inputs.numpy_input_fn' to 'tf.compat.v1.estimator.inputs.numpy_input_fn'
+144:19: INFO: Renamed 'tf.estimator.inputs.numpy_input_fn' to 'tf.compat.v1.estimator.inputs.numpy_input_fn'
+--------------------------------------------------------------------------------
+

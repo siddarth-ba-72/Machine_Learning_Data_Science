@@ -1,0 +1,132 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 3 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: CellStrat_Convolutional_Neural_Networks.ipynb
+--------------------------------------------------------------------------------
+CellStrat_Convolutional_Neural_Networks.ipynb:70:14: WARNING: tf.nn.conv2d called with use_cudnn_on_gpu argument, requires manual check: use_cudnn_on_gpu has been removed, behavior is now equivalentto setting it to True.
+CellStrat_Convolutional_Neural_Networks.ipynb:252:20: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+CellStrat_Convolutional_Neural_Networks.ipynb:373:16: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'CellStrat_Convolutional_Neural_Networks.ipynb'
+ outputting to 'custom_CellStrat_Convolutional_Neural_Networks.ipynb'
+--------------------------------------------------------------------------------
+
+15:4: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+16:4: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+68:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+70:14: WARNING: tf.nn.conv2d called with use_cudnn_on_gpu argument, requires manual check: use_cudnn_on_gpu has been removed, behavior is now equivalentto setting it to True.
+70:14: INFO: Added keywords to args of function 'tf.nn.conv2d'
+70:14: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+70:14: INFO: Removed argument use_cudnn_on_gpu for function tf.nn.conv2d
+71:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+100:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+101:14: INFO: Added keywords to args of function 'tf.nn.conv2d'
+101:14: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+103:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+116:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+117:7: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+119:7: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+121:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+134:13: INFO: Added keywords to args of function 'tf.nn.conv2d'
+134:13: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+135:12: INFO: Added keywords to args of function 'tf.nn.conv2d'
+135:12: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+137:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+155:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+158:11: INFO: Added keywords to args of function 'tf.nn.max_pool'
+158:11: INFO: Renamed keyword argument for tf.nn.max_pool from value to input
+158:11: INFO: Renamed 'tf.nn.max_pool' to 'tf.nn.max_pool2d'
+159:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+195:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+195:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+196:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+198:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+200:8: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+203:8: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+208:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+208:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+209:12: INFO: Added keywords to args of function 'tf.nn.max_pool'
+209:12: INFO: Renamed keyword argument for tf.nn.max_pool from value to input
+209:12: INFO: Renamed 'tf.nn.max_pool' to 'tf.nn.max_pool2d'
+213:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+213:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+214:10: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+217:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+217:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+218:13: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+222:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+222:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+224:11: INFO: Added keywords to args of function 'tf.reduce_mean'
+225:16: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+229:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+229:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+230:14: INFO: Added keywords to args of function 'tf.nn.in_top_k'
+231:15: INFO: Added keywords to args of function 'tf.reduce_mean'
+233:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+233:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+234:11: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+235:12: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+242:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+252:20: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+282:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+282:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+283:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+285:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+286:15: INFO: Renamed 'tf.placeholder_with_default' to 'tf.compat.v1.placeholder_with_default'
+288:8: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+291:8: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+295:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+295:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+296:12: INFO: Added keywords to args of function 'tf.nn.max_pool'
+296:12: INFO: Renamed keyword argument for tf.nn.max_pool from value to input
+296:12: INFO: Renamed 'tf.nn.max_pool' to 'tf.nn.max_pool2d'
+298:22: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+300:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+300:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+301:10: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+302:15: INFO: Renamed 'tf.layers.dropout' to 'tf.compat.v1.layers.dropout'
+304:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+304:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+305:13: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+308:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+308:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+310:11: INFO: Added keywords to args of function 'tf.reduce_mean'
+311:16: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+314:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+314:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+315:14: INFO: Added keywords to args of function 'tf.nn.in_top_k'
+316:15: INFO: Added keywords to args of function 'tf.reduce_mean'
+318:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+318:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+319:11: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+320:12: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+324:12: INFO: Renamed 'tf.get_collection' to 'tf.compat.v1.get_collection'
+324:30: INFO: Renamed 'tf.GraphKeys' to 'tf.compat.v1.GraphKeys'
+325:62: INFO: Renamed 'tf.get_default_session' to 'tf.compat.v1.get_default_session'
+329:29: INFO: Renamed 'tf.get_default_graph' to 'tf.compat.v1.get_default_graph'
+333:4: INFO: Renamed 'tf.get_default_session' to 'tf.compat.v1.get_default_session'
+344:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+373:16: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+

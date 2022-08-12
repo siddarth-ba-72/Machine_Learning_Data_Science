@@ -1,0 +1,45 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'TensorFlow_with_Keras.ipynb'
+ outputting to 'custom_TensorFlow_with_Kera.ipynb'
+--------------------------------------------------------------------------------
+
+12:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+18:11: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+21:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+28:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+37:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+45:11: INFO: Added keywords to args of function 'tf.reduce_sum'
+48:12: INFO: Added keywords to args of function 'tf.reduce_mean'
+58:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+88:12: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+92:27: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+96:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+99:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+119:25: INFO: Added keywords to args of function 'tf.reduce_mean'
+122:20: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+141:7: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+247:4: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+248:11: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+252:11: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+256:9: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+260:9: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+269:9: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+273:13: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+281:20: INFO: Added keywords to args of function 'tf.argmax'
+291:11: INFO: tf.losses.softmax_cross_entropy requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+291:11: INFO: Renamed 'tf.losses.softmax_cross_entropy' to 'tf.compat.v1.losses.softmax_cross_entropy'
+294:16: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+299:14: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+313:8: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+366:0: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+--------------------------------------------------------------------------------
+

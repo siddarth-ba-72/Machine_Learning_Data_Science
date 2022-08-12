@@ -1,0 +1,43 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 4 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: module8_news_rnn_sentiment.ipynb
+--------------------------------------------------------------------------------
+module8_news_rnn_sentiment.ipynb:133:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+module8_news_rnn_sentiment.ipynb:138:17: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+module8_news_rnn_sentiment.ipynb:138:17: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+module8_news_rnn_sentiment.ipynb:205:20: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'module8_news_rnn_sentiment.ipynb'
+ outputting to 'custom_module8_news_rnn_sentiment.ipynb'
+--------------------------------------------------------------------------------
+
+115:12: INFO: Renamed 'tf.set_random_seed' to 'tf.compat.v1.set_random_seed'
+117:25: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+118:27: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+122:15: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+124:15: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+127:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+130:32: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+133:18: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+133:18: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+137:16: INFO: Renamed 'tf.contrib.rnn.MultiRNNCell' to 'tf.compat.v1.nn.rnn_cell.MultiRNNCell'
+138:17: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+138:17: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+138:47: INFO: Renamed 'tf.contrib.rnn.BasicLSTMCell' to 'tf.compat.v1.nn.rnn_cell.BasicLSTMCell'
+147:41: INFO: Renamed 'tf.nn.dynamic_rnn' to 'tf.compat.v1.nn.dynamic_rnn'
+157:17: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+170:15: INFO: Added keywords to args of function 'tf.reduce_mean'
+174:20: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+178:13: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+205:20: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+211:13: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+--------------------------------------------------------------------------------
+
